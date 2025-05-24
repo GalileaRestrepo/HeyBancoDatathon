@@ -9,7 +9,7 @@ clientes.rename(columns=lambda x: x.strip(), inplace=True)
 transacciones.rename(columns=lambda x: x.strip(), inplace=True)
 
 # Combinar las bases usando la columna 'ID'
-base_completa = transacciones.merge(clientes, on='ID', how='left')
+base_completa = transacciones.merge(clientes, on='id', how='left')
 
 # Mostrar algunas filas para revisar
 print("Vista previa de la base combinada:")
